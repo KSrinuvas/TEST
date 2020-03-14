@@ -1,0 +1,262 @@
+Reading '/home/srm/.cpan/Metadata'
+  Database was generated on Sat, 26 Oct 2019 02:29:03 GMT
+Running install for module 'XML::LibXML'
+Checksum for /home/srm/.cpan/sources/authors/id/S/SH/SHLOMIF/XML-LibXML-2.0201.tar.gz ok
+'YAML' not installed, will not store persistent state
+---- Unsatisfied dependencies detected during ----
+----     SHLOMIF/XML-LibXML-2.0201.tar.gz     ----
+    Alien::Libxml2 [build_requires]
+Running install for module 'Alien::Libxml2'
+Checksum for /home/srm/.cpan/sources/authors/id/P/PL/PLICEASE/Alien-Libxml2-0.09.tar.gz ok
+Configuring P/PL/PLICEASE/Alien-Libxml2-0.09.tar.gz with Makefile.PL
+Alien::Build::Plugin::PkgConfig::Negotiate> Using PkgConfig plugin: PkgConfig::CommandLine
+Alien::Build::CommandSequence> + pkg-config --exists libxml-2.0
+Alien::Build::CommandSequence> + xml2-config --version
+Alien::Build::CommandSequence> [output consumed by Alien::Build recipe]
+Alien::Build::Plugin::Probe::CBuilder> trying: cflags= libs=-lxml2
+Alien::Build::Plugin::Probe::CBuilder> compile failed: error building mytest.o from 'mytest.c' at /usr/share/perl/5.22/ExtUtils/CBuilder/Base.pm line 173.
+Alien::Build::Plugin::Probe::CBuilder> compile failed: x86_64-linux-gnu-gcc -I/usr/lib/x86_64-linux-gnu/perl/5.22/CORE -fPIC -c -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g -o mytest.o mytest.c
+Alien::Build::Plugin::Probe::CBuilder> mytest.c:2:31: fatal error: libxml/xmlversion.h: No such file or directory
+Alien::Build::Plugin::Probe::CBuilder> compilation terminated.
+Alien::Build::Plugin::Probe::CBuilder> trying: cflags=-I/usr/include/libxml2 libs=-lxml2
+Alien::Build::Plugin::Probe::CBuilder> compile failed: error building mytest.o from 'mytest.c' at /usr/share/perl/5.22/ExtUtils/CBuilder/Base.pm line 173.
+Alien::Build::Plugin::Probe::CBuilder> compile failed: x86_64-linux-gnu-gcc -I/usr/lib/x86_64-linux-gnu/perl/5.22/CORE -fPIC -I/usr/include/libxml2 -c -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g -o mytest.o mytest.c
+Alien::Build::Plugin::Probe::CBuilder> mytest.c:2:31: fatal error: libxml/xmlversion.h: No such file or directory
+Alien::Build::Plugin::Probe::CBuilder> compilation terminated.
+Alien::Build::Plugin::Probe::CBuilder> trying: cflags=-I/usr/local/include/libxml2 libs=-lxml2
+Alien::Build::Plugin::Probe::CBuilder> compile failed: error building mytest.o from 'mytest.c' at /usr/share/perl/5.22/ExtUtils/CBuilder/Base.pm line 173.
+Alien::Build::Plugin::Probe::CBuilder> compile failed: x86_64-linux-gnu-gcc -I/usr/lib/x86_64-linux-gnu/perl/5.22/CORE -fPIC -I/usr/local/include/libxml2 -c -D_REENTRANT -D_GNU_SOURCE -DDEBIAN -fwrapv -fno-strict-aliasing -pipe -I/usr/local/include -D_LARGEFILE_SOURCE -D_FILE_OFFSET_BITS=64 -O2 -g -o mytest.o mytest.c
+Alien::Build::Plugin::Probe::CBuilder> mytest.c:2:31: fatal error: libxml/xmlversion.h: No such file or directory
+Alien::Build::Plugin::Probe::CBuilder> compilation terminated.
+Alien::Build> error in probe (will do a share install): Died at /usr/local/share/perl/5.22.1/Alien/Build/Plugin/Probe/CBuilder.pm line 93.
+Alien::Build> Don't panic, we will attempt a share build from source if possible.
+Alien::Build> Do not file a bug unless you expected a system install to succeed.
+Checking if your kit is complete...
+Looks good
+Generating a Unix-style Makefile
+Writing Makefile for Alien::Libxml2
+Writing MYMETA.yml and MYMETA.json
+  PLICEASE/Alien-Libxml2-0.09.tar.gz
+  /usr/bin/perl Makefile.PL INSTALLBIN=/usr/local/bin INSTALLSCRIPT=/usr/local/bin -- OK
+Running make for P/PL/PLICEASE/Alien-Libxml2-0.09.tar.gz
+cp lib/Alien/Libxml2.pm blib/lib/Alien/Libxml2.pm
+"/usr/bin/perl" -MAlien::Build::MM=cmd -e prefix site /usr/lib/x86_64-linux-gnu/perl/5.22 /usr/local/lib/x86_64-linux-gnu/perl/5.22.1 /usr/lib/x86_64-linux-gnu/perl5/5.22
+Alien::Build::Plugin::PkgConfig::Negotiate> Using PkgConfig plugin: PkgConfig::CommandLine
+main> prefix /usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/share/dist/Alien-Libxml2
+"/usr/bin/perl" -MAlien::Build::MM=cmd -e version 0.09
+Alien::Build::Plugin::PkgConfig::Negotiate> Using PkgConfig plugin: PkgConfig::CommandLine
+"/usr/bin/perl" -MAlien::Build::MM=cmd -e download
+Alien::Build::Plugin::PkgConfig::Negotiate> Using PkgConfig plugin: PkgConfig::CommandLine
+Alien::Build::Plugin::Core::Download> decoding html
+Alien::Build::Plugin::Core::Download> candidate *http://xmlsoft.org/sources/libxml2-sources-2.9.9.tar.gz
+Alien::Build::Plugin::Core::Download> candidate  http://xmlsoft.org/sources/libxml2-sources-2.9.7.tar.gz
+Alien::Build::Plugin::Core::Download> candidate  http://xmlsoft.org/sources/libxml2-sources-2.9.6.tar.gz
+Alien::Build::Plugin::Core::Download> candidate  http://xmlsoft.org/sources/libxml2-sources-2.9.5.tar.gz
+Alien::Build::Plugin::Core::Download> candidate  http://xmlsoft.org/sources/libxml2-sources-2.9.3.tar.gz
+Alien::Build::Plugin::Core::Download> candidate  http://xmlsoft.org/sources/libxml2-sources-2.9.2.tar.gz
+Alien::Build::Plugin::Core::Download> candidate  http://xmlsoft.org/sources/libxml2-sources-2.9.0.tar.gz
+Alien::Build::Plugin::Core::Download> candidate  http://xmlsoft.org/sources/libxml2-sources-2.7.8.tar.gz
+Alien::Build::Plugin::Core::Download> candidate  ...
+Alien::Build::Plugin::Core::Download> setting version based on archive to 2.9.9
+Alien::Build::Plugin::Core::Download> downloaded libxml2-sources-2.9.9.tar.gz
+"/usr/bin/perl" -MAlien::Build::MM=cmd -e build
+Alien::Build::Plugin::PkgConfig::Negotiate> Using PkgConfig plugin: PkgConfig::CommandLine
+Alien::Build::CommandSequence> + /home/srm/.cpan/build/Alien-Libxml2-0.09-WEYaMp/_alien/extract_YllM/libxml2-2.9.9/configure --prefix=/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/share/dist/Alien-Libxml2 --with-pic --prefix=/usr/local/lib/x86_64-linux-gnu/perl/5.22.1/auto/share/dist/Alien-Libxml2 --without-python --disable-shared --enable-static
+configure: loading site script /tmp/HV6WHmZcwn/config.site
+checking whether to enable maintainer-specific portions of Makefiles... yes
+checking build system type... x86_64-pc-linux-gnu
+checking host system type... x86_64-pc-linux-gnu
+checking for a BSD-compatible install... /usr/bin/install -c
+checking whether build environment is sane... yes
+checking for a thread-safe mkdir -p... /bin/mkdir -p
+checking for gawk... no
+checking for mawk... mawk
+checking whether make sets $(MAKE)... yes
+checking whether make supports nested variables... yes
+checking whether make supports nested variables... (cached) yes
+checking for gcc... gcc
+checking whether the C compiler works... yes
+checking for C compiler default output file name... a.out
+checking for suffix of executables... 
+checking whether we are cross compiling... no
+checking for suffix of object files... o
+checking whether we are using the GNU C compiler... yes
+checking whether gcc accepts -g... yes
+checking for gcc option to accept ISO C89... none needed
+checking whether gcc understands -c and -o together... yes
+checking for style of include used by make... GNU
+checking dependency style of gcc... gcc3
+checking whether ln -s works... yes
+checking how to run the C preprocessor... gcc -E
+checking for mv... /bin/mv
+checking for tar... /bin/tar
+checking for perl... /usr/bin/perl
+checking for wget... /usr/bin/wget
+checking for xmllint... /usr/bin/xmllint
+checking for xsltproc... /usr/bin/xsltproc
+checking pkg-config is at least version 0.9.0... yes
+checking how to print strings... printf
+checking for a sed that does not truncate output... /bin/sed
+checking for grep that handles long lines and -e... /bin/grep
+checking for egrep... /bin/grep -E
+checking for fgrep... /bin/grep -F
+checking for ld used by gcc... /usr/bin/ld
+checking if the linker (/usr/bin/ld) is GNU ld... yes
+checking for BSD- or MS-compatible name lister (nm)... /usr/bin/nm -B
+checking the name lister (/usr/bin/nm -B) interface... BSD nm
+checking the maximum length of command line arguments... 1572864
+checking how to convert x86_64-pc-linux-gnu file names to x86_64-pc-linux-gnu format... func_convert_file_noop
+checking how to convert x86_64-pc-linux-gnu file names to toolchain format... func_convert_file_noop
+checking for /usr/bin/ld option to reload object files... -r
+checking for objdump... objdump
+checking how to recognize dependent libraries... pass_all
+checking for dlltool... no
+checking how to associate runtime and link libraries... printf %s\n
+checking for ar... ar
+checking for archiver @FILE support... @
+checking for strip... strip
+checking for ranlib... ranlib
+checking command to parse /usr/bin/nm -B output from gcc object... ok
+checking for sysroot... no
+checking for a working dd... /bin/dd
+checking how to truncate binary pipes... /bin/dd bs=4096 count=1
+checking for mt... mt
+checking if mt is a manifest tool... no
+checking for ANSI C header files... yes
+checking for sys/types.h... yes
+checking for sys/stat.h... yes
+checking for stdlib.h... yes
+checking for string.h... yes
+checking for memory.h... yes
+checking for strings.h... yes
+checking for inttypes.h... yes
+checking for stdint.h... yes
+checking for unistd.h... yes
+checking for dlfcn.h... yes
+checking for objdir... .libs
+checking if gcc supports -fno-rtti -fno-exceptions... no
+checking for gcc option to produce PIC... -fPIC -DPIC
+checking if gcc PIC flag -fPIC -DPIC works... yes
+checking if gcc static flag -static works... yes
+checking if gcc supports -c -o file.o... yes
+checking if gcc supports -c -o file.o... (cached) yes
+checking whether the gcc linker (/usr/bin/ld -m elf_x86_64) supports shared libraries... yes
+checking dynamic linker characteristics... GNU/Linux ld.so
+checking how to hardcode library paths into programs... immediate
+checking whether stripping libraries is possible... yes
+checking if libtool supports shared libraries... yes
+checking whether to build shared libraries... no
+checking whether to build static libraries... yes
+Checking zlib
+checking for Z... no
+checking zlib.h usability... no
+checking zlib.h presence... no
+checking for zlib.h... no
+Checking lzma
+checking for LZMA... no
+checking lzma.h usability... no
+checking lzma.h presence... no
+checking for lzma.h... no
+Checking headers
+checking for dirent.h that defines DIR... yes
+checking for library containing opendir... none required
+checking for ANSI C header files... (cached) yes
+checking fcntl.h usability... yes
+checking fcntl.h presence... yes
+checking for fcntl.h... yes
+checking for unistd.h... (cached) yes
+checking ctype.h usability... yes
+checking ctype.h presence... yes
+checking for ctype.h... yes
+checking dirent.h usability... yes
+checking dirent.h presence... yes
+checking for dirent.h... yes
+checking errno.h usability... yes
+checking errno.h presence... yes
+checking for errno.h... yes
+checking malloc.h usability... yes
+checking malloc.h presence... yes
+checking for malloc.h... yes
+checking stdarg.h usability... yes
+checking stdarg.h presence... yes
+checking for stdarg.h... yes
+checking for sys/stat.h... (cached) yes
+checking for sys/types.h... (cached) yes
+checking for stdint.h... (cached) yes
+checking for inttypes.h... (cached) yes
+checking time.h usability... yes
+checking time.h presence... yes
+checking for time.h... yes
+checking math.h usability... yes
+checking math.h presence... yes
+checking for math.h... yes
+checking limits.h usability... yes
+checking limits.h presence... yes
+checking for limits.h... yes
+checking float.h usability... yes
+checking float.h presence... yes
+checking for float.h... yes
+checking for stdlib.h... (cached) yes
+checking for sys/socket.h... yes
+checking for netinet/in.h... yes
+checking for arpa/inet.h... yes
+checking netdb.h usability... yes
+checking netdb.h presence... yes
+checking for netdb.h... yes
+checking sys/time.h usability... yes
+checking sys/time.h presence... yes
+checking for sys/time.h... yes
+checking sys/select.h usability... yes
+checking sys/select.h presence... yes
+checking for sys/select.h... yes
+checking poll.h usability... yes
+checking poll.h presence... yes
+checking for poll.h... yes
+checking sys/mman.h usability... yes
+checking sys/mman.h presence... yes
+checking for sys/mman.h... yes
+checking sys/timeb.h usability... yes
+checking sys/timeb.h presence... yes
+checking for sys/timeb.h... yes
+checking signal.h usability... yes
+checking signal.h presence... yes
+checking for signal.h... yes
+checking for arpa/nameser.h... yes
+checking for resolv.h... yes
+checking dl.h usability... no
+checking dl.h presence... no
+checking for dl.h... no
+checking for dlfcn.h... (cached) yes
+Checking types
+checking for uint32_t... yes
+Checking libraries
+checking for strftime... yes
+checking for strftime... (cached) yes
+checking for localtime... yes
+checking for gettimeofday... yes
+checking for ftime... yes
+checking for stat... yes
+checking for signal... yes
+checking for rand... yes
+checking for rand_r... yes
+checking for srand... yes
+checking for time... yes
+checking for isascii... yes
+checking for mmap... yes
+checking for munmap... yes
+checking for putenv... yes
+checking for va_copy... yes
+checking whether va_list is an array type... yes
+checking for library containing gethostent... none required
+checking for library containing setsockopt... none required
+checking for library containing connect... none required
+checking for type of socket length (socklen_t)... socklen_t *
+checking for const gethostbyname() argument... yes
+checking for const send() second argument... yes
+checking whether to enable IPv6... yes
+checking struct sockaddr::ss_family... yes
+checking for getaddrinfo... yes
+checking for isnan... yes
+checking for isinf... yes
+checking for shl_load... no
+checking for shl_load in -ldld... Makefile:954: recipe for target '_alien/mm/build' failed
